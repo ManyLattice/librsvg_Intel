@@ -99,7 +99,8 @@ Pod::Spec.new do |s|
   s.xcconfig = {
     'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/headers/**",
     "GCC_THUMB_SUPPORT[arch=arm64]" => "NO",
-    "GCC_THUMB_SUPPORT[arch=x86_64]" => "YES"
+    "GCC_THUMB_SUPPORT[arch=x86_64]" => "YES",
+    'VALID_ARCHS' => ['x86_64']
     }
   # s.public_header_files = "headers/**/*.h"
   
