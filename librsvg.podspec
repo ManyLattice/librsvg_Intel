@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint librsvg_Intel.podspec' to ensure this is a
+#  Be sure to run `pod spec lint librsvgIntel.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "librsvg_Intel"
+  s.name         = "librsvgIntel"
   s.version      = "1.0.0"
   s.summary      = "Static libraries"
 
@@ -25,10 +25,10 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  Provides librsvg_Intel libraries
+  Provides librsvgIntel libraries
                    DESC
 
-  s.homepage     = "http://EXAMPLE/librsvg_Intel"
+  s.homepage     = "http://EXAMPLE/librsvgIntel"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -97,7 +97,7 @@ Pod::Spec.new do |s|
   s.vendored_libraries = "lib/*.dylib"
   s.preserve_paths = "headers/**.h"
   s.xcconfig = {
-    'HEADER_SEARCH_PATHS' => 'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/headers/**",
+    'HEADER_SEARCH_PATHS' => "${PODS_ROOT}/#{s.name}/headers/**",
     "GCC_THUMB_SUPPORT[arch=arm64]" => "NO",
     "GCC_THUMB_SUPPORT[arch=x86_64]" => "YES"
     }
